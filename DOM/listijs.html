@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>get  list by multiple methoth</title>
+</head>
+<body>
+    <h1>get list by selectors</h1>
+    <a href="#">The Lists</a>
+    <ul>
+        <li><a href="/tablejs.html">internal links</a></li>
+        <li><a href="/index.html">External links</a></li>
+        <li><a href="#">internal links</a></li>
+        <li><a href="#">externals links</a></li>
+        <li><a href="#">internal links</a></li>
+        <li><a href="/listijs.html">externals links</a></li>
+    </ul>
+    <script>
+        let select = 'a[href*="/"]:not([href^="#"])';
+        let links = document.querySelectorAll(select);
+
+
+        links.forEach(link => link.style.backgroundColor = "lightgrey")
+    </script>
+</body>
+</html>

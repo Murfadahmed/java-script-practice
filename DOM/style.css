@@ -1,0 +1,23 @@
+h1{
+    background-color: lightblue;
+    padding: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+
+}
+ul{
+    display: flex;
+justify-content: space-around;
+}
+ul li{
+    font-size: 1.3rem;
+    cursor: crosshair;
+}
+ul button{
+    background-color: black;
+    color: white;  
+      width: 150px;
+    height: 10px;
+    padding: 20px 10px 30px 10px;
+    cursor: col-resize;
+
+}
