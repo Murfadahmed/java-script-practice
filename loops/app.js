@@ -13,7 +13,17 @@ btn.addEventListener('click', MALIK );
 
 
 /*for loops*/
-let name = ["malik","murfad","ahmed","murtaza","jamal"]
-     for(let n=40 ; n<452  ; n = n + 40)
-     console.log(n)
-     console.log(`hello ${name[1]} ${name[2]}`)
+let ask = prompt("write your name ?")
+let fname = ["malik","murfad","ahmed","murtaza","jamal"]
+// console.log(`hello ${name[1]} ${name[2]}`)
+for(let n=0 ; n < fname.length ; n++){
+     if(ask === fname[n]){
+          console.log("milgaya")
+          break
+     }
+     else{
+          console.log("nhi mila ?")
+     }
+     
+     // console.log(fname.length)
+}
